@@ -23,6 +23,7 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'nokogiri', '~> 1.10.3'
+gem 'twitter-bootstrap-rails'
 
 
 # Use Redis adapter to run Action Cable in production
