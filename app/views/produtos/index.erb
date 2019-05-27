@@ -17,9 +17,15 @@
 			<td><%= produto.preco %></td>
 			<td><%= produto.quantidade %></td>
 			<!--<td><a href="/produtos/<%= produto.id %>/remove" class= "btn btn-danger" >Remover</td>-->
-			<td><%= link_to "Remover", produto, method: :delete, class: "btn btn-danger" %>
+			<td><%= button_to "Remover", 
+							produto, 
+							method: :delete, 
+							class: "btn btn-danger",
+							data: { confirm: "Tem certeza que deseja remover o item #{produto.nome}?"}
+					 %>
 			</tr>
 		<% end %>
 		</tbody>
 	</table>
+	<%= link_to "Cadastrar novo", new_produto_path, class: "btn btn-primary" %>
 </div>
