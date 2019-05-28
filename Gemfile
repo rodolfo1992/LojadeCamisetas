@@ -24,6 +24,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'nokogiri', '~> 1.10.3'
 gem 'twitter-bootstrap-rails'
+gem 'rails-i18n'
 
 
 # Use Redis adapter to run Action Cable in production
