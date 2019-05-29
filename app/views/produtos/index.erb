@@ -12,22 +12,7 @@
 			</tr>
 		</thead>
 		<tbody>
-			<% @produtos_por_id.each do |produto| %>
-			<tr>
-			<td><%= produto.id %></td>
-			<td><%= produto.nome %></td>
-			<td><%= produto.descricao %></td>
-			<td><%= produto.preco %></td>
-			<td><%= produto.quantidade %></td>
-			<!--<td><a href="/produtos/<%= produto.id %>/remove" class= "btn btn-danger" >Remover</td>-->
-			<td><%= button_to "Remover", 
-							produto, 
-							method: :delete, 
-							class: "btn btn-danger",
-							data: { confirm: "Tem certeza que deseja remover o item #{produto.nome}?"}
-					 %>
-			</tr>
-		<% end %>
+				<%= render @produtos_por_id %>
 		</tbody>
 	</table>
 	<%= link_to "Cadastrar novo", new_produto_path, class: "btn btn-primary" %>
