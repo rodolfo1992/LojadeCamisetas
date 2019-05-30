@@ -10,5 +10,11 @@
 							method: :delete, 
 							class: "btn btn-danger",
 							data: { confirm: "Tem certeza que deseja remover o item #{produto.nome}?"}
+			%></td>
+			<td><%= link_to "Alterar", 
+							edit_produto_path(produto), 
+							class: "btn btn-default"
 					 %>
+			</td>
 			</tr>
+
